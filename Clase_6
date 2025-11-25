@@ -1,0 +1,11 @@
+class Alumno:
+    def __init__(self, nombre, calificaciones):
+        self.nombre = nombre
+        self.calificaciones = calificaciones
+
+    def promedio(self):
+        return sum(self.calificaciones) / len(self.calificaciones)
+
+
+a1 = Alumno("Ana", [9, 8, 10])
+print(a1.promedio())
